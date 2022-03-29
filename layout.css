@@ -1,0 +1,51 @@
+body {
+    margin: 0 10%;
+    font-size: 1.5rem;
+    color: var(--dark-gold);
+    background-image: url('floral-border-2.png');
+    background-size: 100% 100%;
+}
+
+/* Main page layout  */
+.wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "header"
+     "navigation"
+     "content"
+     "footer";
+    font-family: var(--font-main);
+}
+  
+.content {
+    grid-area: content;
+}
+  
+.header {
+    grid-area: header;
+}
+.header {
+    grid-area: navigation;
+}
+  
+.footer {
+    grid-area: footer;
+}
+
+/* Navigation stuffs */
+
+nav {
+    width: 100%;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}

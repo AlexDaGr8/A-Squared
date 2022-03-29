@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Miss+Fajardose&family=Neonderthaw&family=Waterfall&display=swap');
+:root {
+    /* CSS HSL */
+    --red: hsla(1, 82%, 67%, 1);
+    --green: hsla(174, 68%, 32%, 1);
+    --champagne: hsla(37, 98%, 80%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --grey: hsla(200, 4%, 54%, 1);
+    --gold: hsla(38, 55%, 65%, 1);
+    --dark-gold: hsla(39, 32%, 40%, 1);
+    
+    --font-fleurdeleah: 'Fleur De Leah', cursive; /* pretty good */
+    --font-Neonderthaw: 'Neonderthaw', cursive;
+    --font-Waterfall: 'Waterfall', cursive;
+    --font-tangerine: 'Tangerine', cursive;
+    --font-josefin: 'Josefin Sans', sans-serif;
+
+    --font-cursive: var(--font-fleurdeleah);
+    --font-main: var(--font-josefin);
+}
+.font-main {
+    font-family: var(--font-main);
+}
+.font-cursive {
+    font-family: var(--font-cursive);
+}
+.font-cursive-second {
+    font-family: var(--font-tangerine);
+}
+
+.green-font {
+    color: var(--green);
+}
+.grey-font {
+    color: var(--green);
+}
+
+nav.nav {
+    position: sticky;
+    top: -5px;
+    z-index: 10;
+}
+.nav ul {
+    margin: 0 0;
+    background-color: var(--white);
+    padding: 20px;
+}
+
+h1.font-cursive {
+    font-size: 6rem;
+    margin: 20px;
+}
+
+h2.line-behind {
+    color: var(--green);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: .5rem 0;
+}
+h2.line-behind:before {
+    border-top: 2px solid var(--red);
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+h2.line-behind span {
+    background: var(--champagne); 
+    padding: 0 15px; 
+}
+
+.box {
+    background-color: var(--champagne);
+    padding: 10px;
+}
+
+.box.details {
+    height: 550px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.box-inner {
+    border: 3px solid var(--gold);
+    padding: 20px;
+    position: relative;
+    min-height: 500px;
+}
+
+.box-inner img {
+    width: 20%;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    z-index: 5;
+}
