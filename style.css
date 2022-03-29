@@ -92,7 +92,7 @@ h2.line-behind span {
     min-height: 500px;
 }
 
-.box-inner img {
+.box-inner img.corner {
     width: 20%;
     position: absolute;
     bottom: -10px;
