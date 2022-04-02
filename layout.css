@@ -21,14 +21,13 @@ body {
 .content {
     grid-area: content;
 }
-  
-.header {
-    grid-area: header;
-}
-.header {
+.navigation {
     grid-area: navigation;
 }
-  
+.header {
+    grid-area: header;
+    margin-top: 5%;
+} 
 .footer {
     grid-area: footer;
 }

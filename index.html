@@ -27,31 +27,58 @@
                 <img class="corner" src="flower-border.png">
             </div>
         </div>
-        <!-- <nav class="nav">
+        <nav class="nav">
             <ul>
-                <li class="nav-item">Welcome</li>
-                <li class="nav-item">Details</li>
-                <li class="nav-item">Registry</li>
-                <li class="nav-item">Other Things</li>
+                <li class="nav-item"><div><a href="#hotel-info">Hotel Info</a></div></li>
+                <li class="nav-item"><div><a href="#where">Where</a></div></li>
+                <li class="nav-item"><div><a href="#registry">Registry</a></div></li>
             </ul>
-        </nav> -->
+        </nav>
         <div class="content">
-            <div class="box details">
+            <div class="box details" id="hotel-info">
+                <div class="box-inner" style="text-align: center;">
+                    <h2 class="line-behind font-cursive-second green-font fs-3"><span>Hotel Info</span></h2>
+                    <p>You will need to call the Holiday Inn below to book a room.</p>
+                    <p>Otherwise, feel free to select alternative accomodations.</p>
+                    <address>
+                        Holiday Inn Greenbelt<br>
+                        7200 Hanover Drive<br>
+                        Greenbelt, MD 20770<br>
+                        <a href="tel:+13019827000">(301) 982-7000</a>
+                        <a href="https://goo.gl/maps/1LPLuc5DhiYmto3Q6">Google Maps</a>
+                    </address>
+                    <img class="corner" src="flower-border.png">
+                </div>
+            </div>
+            <div class="box details" id="where">
                 <div class="box-inner">
-                    <h2 class="line-behind font-cursive-second green-font fs-3"><span>Who When Where</span></h2>
+                    <h2 class="line-behind font-cursive-second green-font fs-3"><span>Where</span></h2>
                     <div class="details">
-                        <img src="MartinsCrossWinds.jpeg" alt="Martins Crosswinds">
-                        <address>
-                            Martins Crosswinds<br>
-                            7400 Greenway Center Dr<br>
-                            Greenbelt, MD 20770<br>
-                            <a href="https://goo.gl/maps/rFGZwGEeM6wP6r9d6">Google Maps</a>
-                        </address>
+                        <h3 class="font-cursive-second green-font fs-2"><span>Ceremony</span></h3>
+                        <div class="img-grid">
+                            <img src="holyfamilychurch.jpeg" alt="Holy Family Catholic Church" style="width: 100%;">
+                            <address style="float: right;">
+                                Holy Family Catholic Church<br>
+                                12010 Woodmore Rd<br>
+                                Mitchellville, MD 20721<br>
+                                <a href="https://goo.gl/maps/A3XxazV5rdYFriKr7">Google Maps</a>
+                            </address>
+                        </div>
+                        <h3 class="font-cursive-second green-font fs-2"><span>Reception Starting at 7pm</span></h3>
+                        <div class="img-grid">
+                            <img src="MartinsCrossWinds.jpeg" alt="Martins Crosswinds">
+                            <address style="float: right;">
+                                Martins Crosswinds<br>
+                                7400 Greenway Center Dr<br>
+                                Greenbelt, MD 20770<br>
+                                <a href="https://goo.gl/maps/rFGZwGEeM6wP6r9d6">Google Maps</a>
+                            </address>
+                        </div>
                     </div>
                     <img class="corner" src="flower-border.png" alt="">
                 </div>
             </div>
-            <div class="box details">
+            <div class="box details" id="registry">
                 <div class="box-inner">
                     <h2 class="line-behind font-cursive-second green-font fs-3"><span>Registry</span></h2>
                     <img class="corner" src="flower-border.png">
@@ -63,14 +90,7 @@
                     <img class="corner" src="flower-border.png">
                 </div>
             </div>
-            <div class="box details">
-                <div class="box-inner">
-                    <h2 class="line-behind font-cursive-second green-font fs-3"><span>Hotel Info</span></h2>
-                    <img class="corner" src="flower-border.png">
-                </div>
-            </div>
         </div>
-        <div class="box footer">Footer</div>
     </div>
     <script src="script.js"></script>
 </body>
