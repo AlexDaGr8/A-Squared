@@ -102,6 +102,8 @@ h1.font-cursive {
 .box {
     background-color: var(--champagne);
     padding: 10px;
+    border: 0px solid transparent;
+    border-radius: 10px;
 }
 
 .box.details {
@@ -111,9 +113,12 @@ h1.font-cursive {
 
 .box-inner {
     border: 3px solid var(--gold);
+    border-radius: 2px;
     padding: 20px;
     position: relative;
     min-height: 300px;
+    outline: 3px solid var(--dark-gold);
+    outline-offset: 10px;
 }
 
 .img-grid {
